@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    background: white;
+    padding-left: 10rem;
+}
+
+h1,h2,h3{
+    color: rgb(53, 51, 51);
+}
+
+h3,h4{
+    font-weight: 400;
+    color: rgb(100,100,100)
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+        padding: 0rem;
+    }
+}
+
+@import './song';
+@import './player';
+@import './library';
+@import './nav'

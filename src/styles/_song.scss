@@ -1,0 +1,50 @@
+.song-container {
+    min-height: 70vh;
+    min-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15rem;
+
+    h2{
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+        }
+
+.active-cover {
+    width:50%;
+    border-radius: 50%;
+    animation: img 100s ease infinite ;
+    transform-origin: center ;
+    
+
+ }
+
+ .unactive-cover {
+    width:50%;
+    border-radius: 50%;
+    background-size: cover;
+
+ }
+ @keyframes img {
+     from{transform: rotateZ(0deg);
+     }
+     to{
+         transform: rotateZ(360deg);
+     }
+ }
+
+@media screen and (max-width:768px) {
+    .song-container{
+        padding: 0rem;
+        img{
+            width: 60%;
+        }
+    }
+}
+ 
+ 
